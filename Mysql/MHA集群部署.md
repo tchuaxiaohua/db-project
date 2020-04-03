@@ -563,7 +563,7 @@ Fri Apr  3 14:22:56 2020 - [info] ** Finished master recovery successfully
 
 ~~~
 
-manager完整Failover切换日志
+mha完整Failover切换日志
 
 ~~~shell
 Fri Apr  3 14:19:46 2020 - [info] MHA::MasterMonitor version 0.58.
