@@ -370,7 +370,7 @@ app1 (pid:3924) is running(0:PING_OK), master:172.16.10.20
 ~~~shell
 # vip配置可以采用两种方式，一种通过keepalived的方式管理虚拟ip浮动；另外一种通过脚本方式启动虚拟ip的方式，这里采用第二种脚本的方式
 # 1) master手动绑定vip
-[root@db20 mysqlbinlog]# ifconfig ens33:0 172.16.10.50/24
+[root@db20 mysqlbinlog]# ifconfig ens33:1 172.16.10.50/24
 [root@db20 mysqlbinlog]# ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
