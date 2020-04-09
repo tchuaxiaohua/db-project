@@ -46,7 +46,7 @@
 ~~~shell
 # mysql下载地址：https://downloads.mysql.com/archives/community/
 # 1) 下载
-[root@db20 ~]# wget https://downloads.mysql.com/archives/get/p/23/file/mysql-5.7.28-linux-glibc2.12-x86_64.tar.gz
+[root@db20 ~]# wget https://downloads.mysql.com/archives/get/p/23/file/mysql-5.7.29-linux-glibc2.12-x86_64.tar.gz
 # 2) 创建目录
 [root@db20 ~]# mkdir /opt/mysql/{data,conf,logs} -p
 # 3) 解压重命名
