@@ -163,6 +163,8 @@ export PATH=/opt/mysql5.7/bin:$PATH
   3、loose-group_replication_start_on_boot ：为了避免每次启动自动引导具有相同名称的第二个组,所以设置为OFF
   4、loose-group_replication_enforce_update_everywhere_checks ：开启多主模式的参数
   5、loose-group_replication_ip_whitelist ：允许加入组复制的客户机来源的ip白名单
+  6、loose-group_replication_local_address ：告诉插件使用IP地址，端口33061用于接收组中其他成员转入连接
+  7、loose-group_replication_single_primary_mode：关闭单主模式
   ~~~
 
   ############################
@@ -316,7 +318,7 @@ mysql> SELECT * FROM performance_schema.replication_group_members;
 
 ~~~
 
-![image-20200409132548299](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20200409132548299.png)
+![image-20200409132548299](\MD-images\image-20200409132548299.png)
 
 可以看到三个节点都已经加入到组中，注意节点状态必须是ONLINE才算是加入完成。
 
