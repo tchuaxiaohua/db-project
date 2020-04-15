@@ -318,7 +318,11 @@ mysql> SELECT * FROM performance_schema.replication_group_members;
 
 ~~~
 
+<<<<<<< HEAD
 ![image-20200409132548299](/MD-images/image-20200409132548299.png)
+=======
+![image-20200409132548299](https://github.com/tchuaxiaohua/db-project/blob/master/Mysql/MD-images/image-20200409132548299.png)
+>>>>>>> 4e0d7247a62f5eb83ff39e2544754a64a6308887
 
 可以看到三个节点都已经加入到组中，注意节点状态必须是ONLINE才算是加入完成。
 
