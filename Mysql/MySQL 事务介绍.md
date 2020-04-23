@@ -293,9 +293,11 @@ Mysql 事务整理(ACID)
 #### 4.1 控制语句
 
 ~~~mysql
-begin：开启事务
+begin：开启事务(start transaction)
 commit：提交事务
 rollback ：回滚事务
+
+# 注意：在存储过程中开启事务时必须使用start transaction，因为begin会被存储过程解析为begin...end结构块
 ~~~
 
 #### 4.2 自动提交策略
@@ -356,9 +358,10 @@ set global autocommit=0; 全局会话，重启后失效
 
   ~~~shell
   导致提交的非事务语句：
-  DDL语句： （ALTER、CREATE 和 DROP）
-  DCL语句： （GRANT、REVOKE 和 SET PASSWORD）
-  锁定语句：（LOCK TABLES 和 UNLOCK TABLES）
+  DDL语句： (ALTER、CREATE 和 DROP)
+  DCL语句： (GRANT、REVOKE 和 SET PASSWORD)
+  锁定语句：(LOCK TABLES 和 UNLOCK TABLES)
+  管理语句： (analyze table、cache index、check table、load index into cache、optimize table、repair table)
   ~~~
 
 * 导致隐式提交的语句
@@ -459,6 +462,13 @@ set global autocommit=0; 全局会话，重启后失效
   默认存放在共享表空间中：ibdata1(5.7版本)，如果开启了innodb_file_per_table参数，将放在每个表的.ibd文件中
   ~~~
 
+* MVCC
+
+  ~~~shell
+  
+  ~~~
+
+  
 
 #### 5.3 事务隔离级别
 
