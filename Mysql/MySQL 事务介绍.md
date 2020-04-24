@@ -1,4 +1,4 @@
-Mysql 事务整理(ACID)
+## MySQL 事务整理(ACID)
 
 ### 1 、事务特性
 
@@ -468,7 +468,9 @@ set global autocommit=0; 全局会话，重启后失效
   
   ~~~
 
+  参考文档：
   
+  https://juejin.im/post/5e97d6b7e51d4546f5790f7e
 
 #### 5.3 事务隔离级别
 
